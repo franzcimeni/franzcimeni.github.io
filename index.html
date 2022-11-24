@@ -1,241 +1,325 @@
-<!DOCTYPE html>
-<html>
-<title>Franz Cimeni - Virtual Assistant</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('/w3images/profile_girl.jpg');
-  min-height: 100%;
-}
-</style>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- Sidebar with image -->
-<!-- <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-  <div class="bgimg"></div>
-</nav> -->
+    <title>Marvel HTML Bootstrap 4 Template</title>
 
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
-    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-  </div>
-</nav>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
-
-  <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
-
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Franz Cimeni</b></h1>
-    <p>Virtual Assistant</p>
-    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
-    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
-      <a href="./pdf/resume-franz.pdf" download="resume-franzcimeni" download>
-        <i class="fa fa-download"></i> Download Resume
-      </a>
-    </button>
-  </header>
-
-  <!-- Portfolio Section -->
-  <div class="w3-padding-32 w3-content" id="portfolio">
-    <h2 class="w3-text-grey">My Portfolio</h2>
-    <hr class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-    <h2>About</h2>
-    <hr class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <h3 class="w3-padding-16">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
-    </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
-    </div><br>
-
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">14+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
-    </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24">My Reputation</h3>
-    <img src="/w3images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-black w3-margin-right">Chandler Bing.</span> Web Designer.</p>
-    <p>Jane Doe is just awesome. I am so happy to have met her!</p><br>
-   
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-black w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>Jane Doe saved us from a web disaster.</p><br>
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
     
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-black w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than Jane Doe.</p><br>
-    
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
+<!--
+
+Tooplate 2115 Marvel
+
+https://www.tooplate.com/view/2115-marvel
+
+-->
+  </head>
+  <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Marvel</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Hey folks, I'm</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Marvel Sann</span>
+                                    <span class="animated-item">Web Designer</span>
+                                    <span class="animated-item">UI Specialist</span>
+                                </div>
+                        </h1>
+
+                        <p>Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web development.</p>
+                        
+                        <div class="custom-btn-group mt-4">
+                          <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="images/undraw/undraw_software_engineer_lvl5.svg" class="img-fluid" alt="svg image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="project py-5" id="project">
+        <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-11 text-center mx-auto col-12">
+
+                      <div class="col-lg-8 mx-auto">
+                        <h2>Things I have designed for digital media agencies</h2>
+                      </div>
+
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image02.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image03.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4">Experiences</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2019</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Project Manager</span><small>Best Studio</small></h3>
+                                  <p>Proin ornare non purus ut rutrum. Nulla facilisi. Aliquam laoreet libero ac pharetra feugiat. Cras ac fermentum nunc, a faucibus nunc.</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2018</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>UX Designer</span><small>Digital Ace</small></h3>
+                                <p>Fusce rutrum augue id orci rhoncus molestie. Nunc auctor dignissim lacus vel iaculis.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2016</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>UI Freelancer</h3>
+                                <p>Sed fringilla vitae enim sit amet cursus. Sed cursus dictum tortor quis pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2014</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Junior Designer<small>Crafted Co.</small></h3>
+                                <p>Cras scelerisque scelerisque condimentum. Nullam at volutpat mi. Nunc auctor ipsum eget magna consequat viverra.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2017</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Mobile Web</span><small>Master Design</small></h3>
+                                  <p>Please tell your friends about Tooplate website. That would be very helpful. We need your support.</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2015</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>User Interfaces</span><small>Creative Agency</small></h3>
+                                <p><a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a> is a great website to download HTML templates without any login or email.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2013</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Artwork Design</span><small>New Art School</small></h3>
+                                <p>You can freely use Tooplate's templates for your business or personal sites. You cannot redistribute this template without a permission.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-5 mr-lg-5 col-12">
+            <div class="google-map w-100">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12088.558402180099!2d-73.99373482142036!3d40.75895421922642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2smm!4v1549875377188" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+                <div class="contact-info-item">
+                  <h3 class="mb-3 text-white">Say hello</h3>
+                  <p class="footer-text mb-0">010 020 0960</p>
+                  <p><a href="mailto:hello@company.co">hello@company.co</a></p>
+                </div>
+
+                <ul class="social-links">
+                     <li><a href="#" class="uil uil-dribbble" data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
+                     <li><a href="#" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
+                     <li><a href="#" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="contact-form">
+              <h2 class="mb-4">Interested to work together? Let's talk</h2>
+
+              <form action="" method="get">
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                  </div>
+
+                  <div class="col-lg-6 col-12">
+                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                  </div>
+
+                  <div class="ml-lg-auto col-lg-5 col-12">
+                    <input type="submit" class="form-control submit-btn" value="Send Button">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
       </div>
+    </section>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
-          <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-    <!-- End Grid/Pricing tables -->
-    </div>
-    
-  <!-- End About Section -->
-  </div>
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
 
-  <!-- Contact Section -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-    <h2>Contact Me</h2>
-    <hr class="w3-opacity">
+                    <div class="col-lg-12 col-12">                                
+                        <p class="copyright-text text-center">Copyright &copy; 2019 Company Name . All rights reserved</p>
+                        <p class="copyright-text text-center">Designed by <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a></p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    </div>
-    
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
-   
-    <p>Lets get in touch. Send me a message:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>  
-  
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
-  
-<!-- END PAGE CONTENT -->
-</div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
 
-<script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-
-</body>
+  </body>
 </html>
